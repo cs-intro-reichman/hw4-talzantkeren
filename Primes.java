@@ -23,6 +23,7 @@ public static void main(String[] args) {
         }
         i++;
     }
+    System.out.println("Prime numbers up to " + n + ":");
 
     for (i = 2; i <= n; i++) {
         if (p[i] == true) {
