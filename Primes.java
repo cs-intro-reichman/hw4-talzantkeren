@@ -34,3 +34,4 @@ public static void main(String[] args) {
     int percent = (100 * primes) / n;
     System.out.println("There are " + primes + " primes between 2 and " + n + " (" + percent + "% are primes)");
 }
+}
