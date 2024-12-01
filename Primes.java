@@ -1,3 +1,4 @@
+public class Primes {
 public static void main(String[] args) {
     int n = Integer.parseInt(args[0]);
     boolean[] p = new boolean[n + 1];
