@@ -25,9 +25,13 @@ public class KeywordsDetector {
         int len2 = keywords.length;
         int i = 0;
         int i1 = 0;
+        String str1="";
+        String str2 = "";
         for(i=0;i<len1;i++){
-            for(i1=0;i1<len2;i1++)
-            if(contains(sentences[i],keywords[i1])==true)
+            for(i1=0;i1<len2;i1++){
+            str1=sentences[i].toLowerCase();
+            str2=keywords[i1].toLowerCase();
+            if(contains(str1,str2)==true)
             {
                 System.out.println(sentences[i]);
                 break;
@@ -35,6 +39,7 @@ public class KeywordsDetector {
         }
 
     }
+}
     public static boolean contains(String str1, String str2) {
         int len1 = str1.length();
         int len2 = str2.length();
